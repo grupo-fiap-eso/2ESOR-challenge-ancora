@@ -1,0 +1,8 @@
+
+module RedeAncora {
+    exports model;
+    exports view;
+    exports exceptions;
+    exports services;
+    requires java.desktop;
+}

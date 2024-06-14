@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ancora Connect</title>
+    <link rel="stylesheet" href="../css/dashboard.css">
+    <script src="https://kit.fontawesome.com/9eb0a8bce2.js" crossorigin="anonymous"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.6.0/chart.min.js" integrity="sha512-GMGzUEevhWh8Tc/njS0bDpwgxdCJLQBWG3Z2Ct+JGOpVnEmjvNx6ts4v6A2XJf1HOrtOsfhv3hBKpK9kE5z8AQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+
+<body>
+
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="../imgs/ancoraLogo.png" alt="">
+                    <h2>ANC<span class="danger">ORA</span></h2>
+                </div>
+                <div class="close" id="close-btn">
+                    <span> <i class="fa-solid fa-xmark"></i></span>
+                </div>
+            </div>
+
+            <div class="sidebar">
+                <a href="./Home.html" class="active">
+                    <span><i class="icon fa-solid fa-house-chimney"></i></span>
+                    <h3>Dashboard</h3>
+                </a>
+                <a href="./equipes.html" >
+                    <span><i class="icon fa-solid fa-user-group"></i></span>
+                    <h3>Equipes</h3>
+                </a>
+                <a href="./eventos.html">
+                    <span><i class="icon fa-solid fa-film"></i></span>
+                    <h3>Playlist</h3>
+                </a>
+                <a href="./cadastro.html">
+                    <span><i class="fa-solid fa-award"></i></span>
+                    <h3>Cadastro</h3>
+                </a>
+                <a href="./perfil.html">
+                    <span><i class="fa-solid fa-user"></i></span>
+                    <h3>Perfil</h3>
+                </a>
+               
+                <a href="./index.html">
+                    <span><i class="icon fa-solid fa-arrow-right-from-bracket"></i></span>
+                    <h3>Sair</h3>
+                </a>
+            </div>
+        </aside>
+
+        <!-- FIM DA BARRA LATERAL -->
+
+        <main>
+            <h1>Dashboard</h1>
+
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="sales"> <!-- cards superiores -->
+                    <span><i class="fa-solid fa-chart-line"></i></span>
+                    <div class="middle">
+                        <div class="left">
+                            <head>Total Visto</head>
+                            <h1>20Pontos</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>80%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Há 2 horas</small>
+
+                </div>
+                <!-- FIM DOS CARDS SUPERIORES -->
+                <div class="expenses"> <!-- cards superiores -->
+                    <span><i class="fa-solid fa-chart-line"></i></span>
+                    <div class="middle">
+                        <div class="left">
+                            <head>Total Visto</head>
+                            <h1>20Pontos</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>80%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Há 2 horas</small>
+
+                </div>
+                <!-- FIM DOS CARDS SUPERIORES -->
+                <div class="income"> <!-- cards superiores -->
+                    <span><i class="fa-solid fa-chart-line"></i></span>
+                    <div class="middle">
+                        <div class="left">
+                            <head>Total Visto</head>
+                            <h1>20Pontos</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="36"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>80%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Há 2 horas</small>
+
+                </div>
+                <!-- FIM DOS CARDS SUPERIORES -->
+            </div>
+
+            <div class="recent-orders">
+                <h2>Eventos Recentes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>CEO</th>
+                            <th>Empresa Líder</th>
+                            <th>Tema</th>
+                            <th>Views</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Carlos Alberto</td>
+                            <td>Cia 1</td>
+                            <td>Mecânica World</td>
+                            <td class="warning">50</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Luisa Silva</td>
+                            <td>Cia 1</td>
+                            <td>Startups</td>
+                            <td class="warning">80</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>João Costa</td>
+                            <td>Cia 4</td>
+                            <td>Mercado Digital</td>
+                            <td class="warning">85</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Mariana Pereira</td>
+                            <td>Cia 1</td>
+                            <td>Automobilismo e o mercado financeiro</td>
+                            <td class="warning">100</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                        <tr>
+                            <td>Carlos Costa</td>
+                            <td>Cia 3</td>
+                            <td>Empreendedorismo 2024</td>
+                            <td class="warning">110</td>
+                            <td class="primary">Detalhes</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a href="#">Mostrar tudo</a>
+            </div>
+
+            <!--GRAFICO-->
+            <div class="grafico">
+                <h1>Análise de Desempenho</h1>
+                <canvas id="chart"></canvas>
+            </div>
+        </main>
+
+        <!-- FIM DA MAIN -->
+
+        <div class="right">
+            <div class="top">
+                <button id="menu-btn">
+                    <span><i class="fa-solid fa-bars"></i></span>
+                </button>
+                <div class="theme-toggler">
+                    <span><i class="fa-solid fa-sun active"></i></span>
+                    <span><i class="fa-solid fa-moon"></i></span>
+                </div>
+                <div class="profile">
+                    <div class="info">
+                        <p>Olá, <b>Anderson</b></p>
+                        <small class="text-muted">Marketing</small>
+                    </div>
+                    <div class="profile-photo">
+                        <img src="../imgs/profile-photo.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="recent-updates">
+                <h2>Chat Geral</h2>
+                <div class="updates">
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="../imgs/profile-photo.png" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Pedro silva</b> comentou sobre atuais peças no mercado</p>
+                            <small class="text-muted">há 3 horas</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="../imgs/profile-photo.png" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Anderson Gwen</b> comentou sobre atuais peças no mercado</p>
+                            <small class="text-muted">há 3 horas</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="../imgs/profile-photo.png" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Jacob Jones</b> comentou sobre atuais peças no mercado</p>
+                            <small class="text-muted">há 3 horas</small>
+                        </div>
+                    </div>
+                    <div class="update">
+                        <div class="profile-photo">
+                            <img src="../imgs/profile-photo.png" alt="">
+                        </div>
+                        <div class="message">
+                            <p><b>Dianne Russel</b> comentou sobre atuais peças no mercado</p>
+                            <small class="text-muted">há 3 horas</small>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="sales-analytics">
+                <h2>Eventos</h2>
+                <div class="item offline">
+                    <div class="icon">
+                        <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Mecânica World</h3>
+                            <small class="text-muted">Youtube</small>
+                        </div>
+                        <h5 class="danger">10/06</h5>
+                        <h3><a href="#">Acesse aqui!</a></h3>
+                    </div>
+                </div>
+                <div class="item customers">
+                    <div class="icon">
+                        <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Startups</h3>
+                            <small class="text-muted">Youtube</small>
+                        </div>
+                        <h5 class="success">01/06</h5>
+                        <h3><a href="#">Acesse aqui!</a></h3>
+                    </div>
+                </div>
+                <div class="item online">
+                    <div class="icon">
+                        <span><i class="fa-solid fa-plus"></i></span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>Mercado Digital</h3>
+                            <small class="text-muted">Última semana</small>
+                        </div>
+                        <h5 class="success">20/05</h5>
+                        <h3><a href="#">Acesse aqui!</a></h3>
+                    </div>
+                </div>
+                <div class="item add-product">
+                    <div>
+                        <span><i class="fa-solid fa-plus"></i></span>
+                        <h3>Novo Evento</h3>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="sales-analytics">
+                <h2>Pontuação das Empresas</h2>
+                <div class="item offline">
+                    <div class="icon">
+                        <span><i class="fa-solid fa-id-badge"></i></span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>CEO - Carlos</h3>
+                            <small class="text-muted">Cia3</small>
+                        </div>
+                        <h5 class="danger">85 Pts</h5>
+                        <h3>1°</h3>
+                    </div>
+                </div>
+                <div class="item customers">
+                    <div class="icon">
+                        <span><i class="fa-solid fa-id-badge"></i></span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>CEO - Luisa</h3>
+                            <small class="text-muted">Cia 1</small>
+                        </div>
+                        <h5 class="danger">77 Pts</h5>
+                        <h3>2°</h3>
+                    </div>
+                </div>
+                <div class="item online">
+                    <div class="icon">
+                        <span><i class="fa-solid fa-id-badge"></i></span>
+                    </div>
+                    <div class="right">
+                        <div class="info">
+                            <h3>CEO - João</h3>
+                            <small class="text-muted">Cia 4</small>
+                        </div>
+                        <h5 class="danger">70 Pts</h5>
+                        <h3>3°</h3>
+                    </div>
+                </div>
+                 
+            </div>
+
+        </div>
+
+        
+
+        
+       
+    </div>
+
+
+
+    <script src="../js/dash.js"></script>
+</body>
+
+</html>
